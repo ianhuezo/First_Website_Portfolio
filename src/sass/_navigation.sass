@@ -1,0 +1,109 @@
+$header-height: 80px
+$title-height: 50px
+$navigation-size: 30px
+$logo-size: 64px
+$the-line-height: 4px
+$center-header: ($header-height - $title-height) / 2
+$center-navigation: ($header-height - $navigation-size) / 2
+$center-logo: ($header-height - $logo-size) / 2
+$center-line: ($header-height - $the-line-height) / 2
+
+//35% title 30% logo 35% menu
+div
+  .navigation
+    width: 100vw
+    max-width: 1920px
+    height: $header-height
+    position: fixed
+    z-index: 10
+    display: flex
+    background: #3300ff
+    font-size: $title-height
+    box-shadow: inset 0 0 10px #000000
+    nav
+      display: flex
+      width: 35%
+      overflow-x: visible
+      margin: 0 auto
+      @media (max-width: 1240px)
+        width: 70%
+      @media (max-width: 500px)
+        margin-right: 46px
+      ul
+        list-style-type: none
+        display: inline-flex
+        padding: 0
+        margin: $center-navigation
+        @media (max-width: 500px)
+          width: 100%
+        li
+          font-size: $navigation-size
+          color: white
+          margin-left: 1.5vw
+          margin-right: 1.5vw
+          cursor: pointer
+          z-index: 1
+          @media (max-width: 1540px)
+            margin-left: 1vw
+            margin-right: 1vw
+            font-size: 25px
+          .link
+            color: white
+            text-decoration: none
+            @media (max-width: 500px)
+              font-size: 57%
+              margin-left: 5px
+              border: 2px solid white
+              border-radius: 20%
+              padding: 10%
+          .link:hover
+              text-decoration: underline
+        li:active
+          transform: translateY(2px)
+    .all-logo-container
+      width: 30%
+      height: $header-height
+      display: inline-flex
+      z-index: -2
+      @media (max-width: 1240px)
+        margin: 0 auto
+        width: 0
+      .line-container
+        width: 50%
+        @media (max-width: 1240px)
+          width: 0%
+        .white-line
+          margin-top: $center-line
+          height: $the-line-height
+          background-color: white
+      .header-logo
+        margin: $center-logo
+        @media (max-width: 500px)
+          width: 32px
+          height: 32px
+          margin-top: 22px
+
+.transition-header
+  height: 10px
+  width: 100%
+  background-color: black
+  position: absolute
+  z-index: 9
+  opacity: 0.9
+  top: 80px
+  max-width: 1920px
+  @media (max-height: 600px) and (max-width: 550px)
+    display: none
+.header-title-container
+  display: flex
+  width: 35%
+  @media (max-width: 1240px)
+    width: 0%
+  .header-title
+    margin: 0 auto
+    font-size: $title-height
+    padding-top: $center-header
+    padding-bottom: $center-header
+    @media (max-width: 1240px)
+      opacity: 0
+      font-size: 40px

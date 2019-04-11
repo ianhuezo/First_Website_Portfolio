@@ -1,0 +1,180 @@
+.modal-cover
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(0,0,0,.6)
+  z-index: 1040
+  display: none
+.modal-cover-active
+  display: block
+.modal-container
+  z-index: 1050
+  position: fixed
+  border-radius: 6px
+  width: 600px
+  min-height: 300px
+  left: 50%
+  top: 10%
+  margin-left: -300px
+  display: none
+  @media (max-height: 800px)
+    top: 0
+.modal-header
+  height: 200px
+  font-size: 50px
+  .hobby-header
+    height: 100%
+    width: 110%
+    border-bottom: 4px solid #996515
+    .header-image-hobby
+      border-radius: 10px
+      position: relative
+      width: 90%
+      height: 90%
+      margin-top: 2.5%
+      margin-left: 3%
+      background-image: url('../images/banner-hobby.jpg')
+      background-origin: content-box
+  .intern-header
+    height: 100%
+    width: 100%
+    border-bottom: 4px solid maroon
+    .header-image-intern
+      border-radius: 10px
+      position: relative
+      width: 90%
+      height: 90%
+      margin-top: 2.5%
+      margin-left: 5%
+      background-image: url('../images/internship-banner.png')
+      background-origin: content-box
+      box-shadow: 5px 3px 4px 0px maroon
+      background-repeat: no-repeat
+      @media (max-width: 550px)
+        background-size: contain
+        width: 350px
+        left: 14%
+        box-shadow: 0px 0px 0px 0px black
+  .activity-header
+    height: 100%
+    width: 100%
+    border-bottom: 4px solid green
+    .header-image-activity
+      border-radius: 10px
+      position: relative
+      width: 90%
+      height: 90%
+      margin-top: 2.5%
+      margin-left: 5%
+      background: #99ff00
+      background: url('../images/banner-activity.jpg')
+.modal-hobby
+  background: #ffcc00
+  border: 5px solid #996515
+  display: block
+  padding-bottom: 10px
+  overflow-y: auto
+  overflow-x: hidden
+  @media(max-height: 600px)
+    height: 500px
+  &::-webkit-scrollbar
+    width: 12px
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0)
+    border-radius: 10px
+  &::-webkit-scrollbar-thumb
+    border-radius: 10px
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+.modal-intern
+  display: block
+  background: #ff0000
+  border: 5px solid maroon
+  @media(max-height: 600px)
+    height: 500px
+    overflow-y: scroll
+    &::-webkit-scrollbar
+      width: 12px
+    &::-webkit-scrollbar-track
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0)
+      border-radius: 10px
+    &::-webkit-scrollbar-thumb
+      border-radius: 10px
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+.modal-activities
+  display: block
+  background: #99ff00
+  border: 5px solid green
+  @media(max-height: 600px)
+    height: 500px
+    overflow-y: scroll
+    &::-webkit-scrollbar
+      width: 12px
+    &::-webkit-scrollbar-track
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0)
+      border-radius: 10px
+    &::-webkit-scrollbar-thumb
+      border-radius: 10px
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+.hobby-body
+  width: 100%
+  height: 470px
+  font-size: 20px
+  .hobby-body-content
+    font-size: 20px
+    height: 100%
+    width: 90%
+    margin-right: 5%
+    margin-left: 5%
+    color: #996515
+    padding-right: 20px
+    border-top: 4px solid #996515
+    h4
+      line-height: 1px
+    @media (max-width: 550px)
+      font-size: 14px
+      width: 300px
+      margin-right: 10%
+      margin-left: 25%
+
+.intern-body
+  width: 100%
+  height: 485px
+  font-size: 20px
+  padding-bottom: 20px
+  .intern-body-content
+    font-size: 20px
+    height: 100%
+    width: 90%
+    margin-right: 5%
+    margin-left: 5%
+    color: maroon
+    h4
+      line-height: 1px
+    @media (max-width: 550px)
+      font-size: 14px
+      width: 300px
+      margin-right: 10%
+      margin-left: 25%
+.activity-body
+  width: 100%
+  height: 485px
+  font-size: 20px
+  padding-bottom: 20px
+  .activity-body-content
+    font-size: 20px
+    height: 100%
+    width: 90%
+    margin-right: 5%
+    margin-left: 5%
+    color: green
+    h4
+      line-height: 1px
+    @media (max-width: 550px)
+      font-size: 14px
+      width: 300px
+      margin-right: 10%
+      margin-left: 25%
+.underline
+  text-decoration: underline

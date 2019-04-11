@@ -1,0 +1,184 @@
+.diamond-container
+  height: 1000px
+  max-width: 1920px
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  box-shadow: 2px 2px 2px black
+  overflow-x: hidden
+  overflow-y: hidden
+  .darken-stone-background
+    position: relative
+    width: 100%
+    height: 100%
+    z-index: 1
+    background-color: black
+    opacity: 0.5
+  .stone-background
+    position: relative
+    top: -1440px
+.position-diamond-container
+    position: relative
+    top: -2200px
+    left: 5.4vw
+    width: 90%
+    right: 5vw
+    height: 471px
+    @media (max-width: 1667px)
+      top: -2200px
+    .position-hobbies
+      display: inline-block
+      width: 30%
+      height: 100%
+      margin-right: 4.9%
+      @media (max-width: 550px)
+        margin-right: 2%
+    .position-intern
+      display: inline-block
+      width: 30%
+      height: 100%
+      margin-right: 4.7%
+    .position-activities
+      display: inline-block
+      width: 30%
+      height: 100%
+.single-diamond-container
+  font-size: 0
+  height: 100%
+  .text-diamond
+    position: relative
+    top: -20px
+    right: 30px
+    color: white
+    font-size: 40px
+    height: 0px
+    text-align: center
+    z-index: 3
+    cursor: pointer
+    font-family: 'Acme', sans-serif
+    transform: rotate(-45deg)
+    @media (max-width: 1667px)
+      font-size: 35px
+    @media (max-width: 792px)
+      right: 125px
+      bottom: 600px
+      transform: rotate(-90deg)
+    @media (max-width: 550px)
+      right: 125px
+      font-size: 25px
+      top: 60px
+      transform: rotate(-90deg)
+  .diamond-button
+    display: block
+    position: relative
+    transform: rotate(45deg)
+    left: 15%
+    top: 15%
+    height: 350px
+    width: 350px
+    z-index: 3
+    cursor: pointer
+    box-shadow: 7px 2px 6px 3px black
+    @media (max-width: 1667px)
+      height: 300px
+      width: 300px
+    @media (max-width: 590px)
+      height: 310px
+      width: 310px
+  .diamond-button:hover
+    transform: translateY(-5px) rotate(45deg)
+    box-shadow: 10px 4px 10px 3px black
+.color-red
+  background: #ff0000
+  opacity: 0.95
+.color-gold
+  background: #ffcc00
+  opacity: 0.95
+.color-green
+  background: #99ff00
+  opacity: 0.95
+button
+  border: none
+  outline: none
+.about-container-two
+  width: 100%
+  max-width: 1920px
+  min-height: 900px
+
+  .skills-container
+    color: black
+    position: relative
+    max-width: 1920px
+    width: 90%
+    left: 5%
+    right: 5%
+    height: 900px
+    .skills-header
+      display: flex
+      width: 100%
+      height: 15%
+      .skills-text
+        width: 30%
+        position: relative
+        text-align: center
+        font-size: 50px
+        @media (max-width: 550px)
+          margin-left: 2%
+      .skills-line-left
+        width: 35%
+        height: 2%
+        background: black
+        margin-top: 90px
+        @media (max-width: 550px)
+          width: 30%
+      .skills-line-right
+        width: 35%
+        height: 2%
+        background: black
+        margin-top: 90px
+        @media (max-width: 550px)
+          width: 30%
+          margin-left: 2.5%
+.image-skill-container
+  display: flex
+  width: 90%
+  max-width: 1920px
+  margin-left: 5%
+  min-height: 730px
+  max-height: 900px
+  flex-wrap: wrap
+  border-radius: 10px
+  overflow-y: scroll
+  box-shadow: 0px 2px 5px 3px lightgrey
+  border: 2px solid lightgray
+  &::-webkit-scrollbar
+    width: 12px
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0)
+    border-radius: 10px
+  &::-webkit-scrollbar-thumb
+    border-radius: 10px
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+  .skill-row
+    display: flex
+    width: 100%
+    min-height: 300px
+    max-height: 400px
+    flex-wrap: wrap
+    .image-portrait
+      line-height: 40px
+      margin-left: 8vw
+      margin-top: 4vh
+      width: 200px
+      height: 200px
+      @media (max-width: 1630px)
+        width: 140px
+        height: 140px
+      @media (max-width: 600px)
+        margin-left: 12vw
+        width: 100px
+        height: 100px
+      .image-skill
+        max-width: 100%
+        max-height: 100%
